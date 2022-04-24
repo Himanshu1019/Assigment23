@@ -23,7 +23,7 @@ public void calculate(String message)
 	
 	
 }
-@override
+
 public   void calculate1(String message1)
 {
 	String regex="[A-Z ][a-z]*";
@@ -36,6 +36,23 @@ public   void calculate1(String message1)
 	else 
 	{
 		System.out.println("no not a valid lastname ");
+	}
+	
+
+}
+
+public void calculate2(String str1)
+{
+	String regex="[a-zA-Z0-9.][a-zA-Z0-Hi9]@[a-zA-Z]+([.][a-zA-Z0-9]+)+";
+	Pattern p=Pattern.compile(regex);
+	Matcher m=p.matcher(str1);
+	if(m.find())
+	{
+		System.out.println("yes valid emailid ");
+	}
+	else 
+	{
+		System.out.println(" no not a valid mailid ");
 	}
 	
 

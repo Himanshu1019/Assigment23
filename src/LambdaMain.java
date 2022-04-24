@@ -14,9 +14,14 @@ public class LambdaMain {
 		LambdaInter obj1=new LambdaImplement();
 		String message1 = s.next();	
 		obj.calculate1(message1);
-		{
+		System.out.println("enter the emailid  to check ");
+		LambdaInter obj2=new LambdaImplement();
+		String message2 = s.next();	
+		obj.calculate2(message2);
+		
+		
 			
-		}
+		
 		
 
 	}
