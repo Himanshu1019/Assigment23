@@ -57,6 +57,22 @@ public void calculate2(String str1)
 	
 
 }
+
+public  void calculate3(String number )
+{
+	String check="(0/91)?[7-9][0-9]{9}";
+	Pattern p=Pattern.compile(check);
+	Matcher m=p.matcher(number);
+	if(m.find())
+	{
+		System.out.println("yes valid mobile number ");
+	}
+	else 
+	{
+		System.out.println(" no not a valid mobile number ");
+	}
+	
+}
 }
 
 

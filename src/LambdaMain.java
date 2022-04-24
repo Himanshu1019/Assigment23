@@ -18,7 +18,10 @@ public class LambdaMain {
 		LambdaInter obj2=new LambdaImplement();
 		String message2 = s.next();	
 		obj.calculate2(message2);
-		
+		System.out.println("enter the mobile number  to check ");
+		LambdaInter obj3=new LambdaImplement();
+		String message3 = s.next();	
+		obj.calculate3(message2);
 		
 			
 		
