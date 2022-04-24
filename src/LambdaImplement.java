@@ -73,6 +73,23 @@ public  void calculate3(String number )
 	}
 	
 }
+
+
+public  void calculate4(String number )
+{
+	String check="[@$%][a-bA-Z0-9]";
+	Pattern p=Pattern.compile(check);
+	Matcher m=p.matcher(number);
+	if(m.find())
+	{
+		System.out.println("yes valid password");
+	}
+	else 
+	{
+		System.out.println(" no not a valid password ");
+	}
+
+}
 }
 
 
