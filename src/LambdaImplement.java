@@ -23,6 +23,23 @@ public void calculate(String message)
 	
 	
 }
+@override
+public   void calculate1(String message1)
+{
+	String regex="[A-Z ][a-z]*";
+	Pattern p=Pattern.compile(regex);
+	Matcher m=p.matcher(message1);
+	if(m.find())
+	{
+		System.out.println("yes valid lastname ");
+	}
+	else 
+	{
+		System.out.println("no not a valid lastname ");
+	}
+	
+
+}
 }
 
 
